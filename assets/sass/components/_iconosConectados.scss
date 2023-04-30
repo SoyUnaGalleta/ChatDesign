@@ -1,0 +1,25 @@
+.main__container__left__list__cont__online {
+    width: 1px;
+    height: 1px;
+    padding: 4px;
+    border-radius: 100%;
+    position: relative;
+    top: 2px;
+    left: -6px;
+}
+
+.colorOnline {
+    background: $green;
+}
+
+.colorDisconec {
+    background: $darkTwo;
+}
+
+.colorOcup {
+    background: $red;
+}
+
+.colorAusent {
+    background: $yellow;
+}

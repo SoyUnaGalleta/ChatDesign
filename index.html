@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body class="body">
+    <header class="header">
+        <div class="header__anuncio"><p class="header__anuncio__texto">Aquí podría haber un <b>anuncio</b></p></div>
+        <nav class="navegation">
+            <div class="navegation__icon">Navbar</div>
+            <ul class="navegation_enlaces">
+                <li class="navegation__item"><a>Home</a></li>
+                <li class="navegation__item"><a>Preguntas Frecuentes</a></li>
+                <li class="navegation__item"><a>Manuales</a></li>
+                <li class="navegation__item"><a>Noticias</a></li>
+                <li class="navegation__item"><a>Calendario</a></li>
+                <li class="navegation__item"><a>Administración Perfil</a></li>
+                <li class="navegation__item"><a>Organigrama Empresa</a></li>
+                <li class="navegation__item"><a>Chat Vendedores y Soportes</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="main">
+
+        <div class="main__title">Chat Vendedores y Equipo de Soporte</div>
+
+        <div class="main__container">
+
+            <input type="radio" id="chat0" name="chat">
+            <input type="radio" id="chat1" name="chat">
+            <input type="radio" id="chat2" name="chat">
+            <input type="radio" id="chat3" name="chat">
+            <input type="radio" id="chat4" name="chat">
+            <input type="radio" id="chat5" name="chat">
+            <input type="radio" id="chat6" name="chat">
+
+            <div class="main__container__left">
+                <div class="main__container__left__busqueda">
+                    <input type="text">
+                    <button>Search</button>
+                </div>
+                <div class="main__container__left__list">
+
+                    <label for="chat0" class="main__container__left__list__cont" onclick="check('0')">
+                        <figure>
+                            <img src="assets/img/HuTao.jpg" alt="persona">
+                        </figure>
+                        <span class="main__container__left__list__cont__online colorOnline"></span>
+                        <div class="main__container__left__list__cont__nyf">
+                            <div class="main__container__left__list__cont__nombre">Hu Tao</div>
+                            <div class="main__container__left__list__cont__fecha">29 de abril</div>
+                        </div>
+                    </label>
+
+                    <label for="chat1" class="main__container__left__list__cont" onclick="check('1')">
+                        <figure>
+                            <img src="assets/img/Layla.jpg" alt="persona">
+                        </figure>
+                        <span class="main__container__left__list__cont__online colorDisconec"></span>
+                        <div class="main__container__left__list__cont__nyf">
+                            <div class="main__container__left__list__cont__nombre">Layla</div>
+                            <div class="main__container__left__list__cont__fecha">29 de abril</div>
+                        </div>
+                    </label>
+
+                    <label for="chat2" class="main__container__left__list__cont" onclick="check('2')">
+                        <figure>
+                            <img src="assets/img/YaeMiko.jpg" alt="persona">
+                        </figure>
+                        <span class="main__container__left__list__cont__online colorOcup"></span>
+                        <div class="main__container__left__list__cont__nyf">
+                            <div class="main__container__left__list__cont__nombre">Yae Miko</div>
+                            <div class="main__container__left__list__cont__fecha">29 de abril</div>
+                        </div>
+                    </label>
+
+                    <label for="chat3" class="main__container__left__list__cont" onclick="check('3')">
+                        <figure>
+                            <img src="assets/img/HuTao.jpg" alt="persona">
+                        </figure>
+                        <span class="main__container__left__list__cont__online colorOnline"></span>
+                        <div class="main__container__left__list__cont__nyf">
+                            <div class="main__container__left__list__cont__nombre">Nombre y Apellido</div>
+                            <div class="main__container__left__list__cont__fecha">29 de abril</div>
+                        </div>
+                    </label>
+
+                    <label for="chat4" class="main__container__left__list__cont" onclick="check('4')">
+                        <figure>
+                            <img src="assets/img/HuTao.jpg" alt="persona">
+                        </figure>
+                        <span class="main__container__left__list__cont__online colorAusent"></span>
+                        <div class="main__container__left__list__cont__nyf">
+                            <div class="main__container__left__list__cont__nombre">Nombre y Apellido</div>
+                            <div class="main__container__left__list__cont__fecha">29 de abril</div>
+                        </div>
+                    </label>
+
+                    <label for="chat5" class="main__container__left__list__cont" onclick="check('5')">
+                        <figure>
+                            <img src="assets/img/HuTao.jpg" alt="persona">
+                        </figure>
+                        <span class="main__container__left__list__cont__online colorDisconec"></span>
+                        <div class="main__container__left__list__cont__nyf">
+                            <div class="main__container__left__list__cont__nombre">Nombre y Apellido</div>
+                            <div class="main__container__left__list__cont__fecha">29 de abril</div>
+                        </div>
+                    </label>
+
+                    <label for="chat6" class="main__container__left__list__cont" onclick="check('6')">
+                        <figure>
+                            <img src="assets/img/HuTao.jpg" alt="persona">
+                        </figure>
+                        <span class="main__container__left__list__cont__online colorOcup"></span>
+                        <div class="main__container__left__list__cont__nyf">
+                            <div class="main__container__left__list__cont__nombre">Nombre y Apellido</div>
+                            <div class="main__container__left__list__cont__fecha">29 de abril</div>
+                        </div>
+                    </label>    
+
+                </div>
+            </div>
+
+            <div class="main__container__right">
+
+                <p class="main__container__right__p">haz click en un chat para entrar a la conversación</p>
+                
+                <div class="main__container__right__chat chatCont0">
+                    <div class="main__container__right__chat__top">
+                        <figure>
+                            <img src="assets/img/HuTao.jpg" alt="persona">
+                        </figure>
+                        <div class="main__container__right__chat__top__nye">
+                            <div class="main__container__right__chat__top__nombre">Hu Tao</div>
+                            <div class="main__container__right__chat__top__estado">¡Siempre lista para atender a mis clientes!</div>
+                        </div>
+                        <div class="main__container__right__chat__top__x" onclick="retorno()">X</div>
+                    </div>
+                    <div class="main__container__right__chat__bottom">
+                        <div class="main__container__right__chat__bottom__cont">
+
+
+                            <div class="main__container__right__chat__bottom__cont__dia">
+                                <figure>
+                                    <img src="assets/img/HuTao.jpg" alt="persona">
+                                </figure>
+                                <div class="main__container__right__chat__bottom__cont__dia_pretxt">
+                                <div class="main__container__right__chat__bottom__cont__dia_txt color1">
+                                    ¡Hola querido cliente!
+                                </div>
+                                <div class="main__container__right__chat__bottom__cont__dia_txt color1">
+                                    Mi nombre es Hu Tao, dueña de la funeraria El Camino, y vengo a ofrecerle las mejores precios para su camino hacía el más allá
+                                </div>
+                                <div class="main__container__right__chat__bottom__cont__dia_txt color1">
+                                    ¿Cuántos ataudes necesita?
+                                </div>
+                                <div class="main__container__right__chat__bottom__cont__dia_txt color1">
+                                    Tenemos las mejores ofertas: 3 por el precio de 2, 5 por el precios de tres
+                                </div>
+                                <div class="main__container__right__chat__bottom__cont__dia_txt color1">
+                                    ¡Nunca esta de más ser precavido!
+                                </div>
+                                </div>
+                            </div>
+
+
+                            <div class="main__container__right__chat__bottom__cont__dia  derecha">
+                                <div class="main__container__right__chat__bottom__cont__dia_pretxt pretxt2">
+                                    <div class="main__container__right__chat__bottom__cont__dia_txt color2">
+                                        Hola...
+                                    </div>
+                                </div>
+                                <figure>
+                                    <img src="assets/img/Haiyi.jpg" alt="persona">
+                                </figure>
+                            </div>
+
+
+
+                        </div>
+                        <div class="main__container__right__chat__bottom__input">
+                            <input type="text">
+                            <button>Search</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="main__container__right__chat chatCont1">
+                    <div class="main__container__right__chat__top">
+                        <figure>
+                            <img src="assets/img/Layla.jpg" alt="persona">
+                        </figure>
+                        <div class="main__container__right__chat__top__nye">
+                            <div class="main__container__right__chat__top__nombre">Layla</div>
+                            <div class="main__container__right__chat__top__estado">¡Prometo no dormirme en el trabajo!</div>
+                        </div>
+                        <div class="main__container__right__chat__top__x" onclick="retorno()">X</div>
+                    </div>
+                    <div class="main__container__right__chat__bottom">
+                        <div class="main__container__right__chat__bottom__cont">
+                            <div class="main__container__right__chat__bottom__cont__dia">
+                                <figure>
+                                    <img src="assets/img/Layla.jpg" alt="persona">
+                                </figure>
+                                <div class="main__container__right__chat__bottom__cont__dia_pretxt">
+                                <div class="main__container__right__chat__bottom__cont__dia_txt color1">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus totam, unde impedit sequi sunt explicabo earum id molestiae, illum aut ipsam quo quibusdam inventore, repudiandae voluptatum. Quibusdam assumenda repudiandae iure?
+                                </div>
+                                <div class="main__container__right__chat__bottom__cont__dia_txt color1">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus totam, unde impedit sequi sunt explicabo earum id molestiae, illum aut ipsam quo quibusdam inventore, repudiandae voluptatum. Quibusdam assumenda repudiandae iure?
+                                </div>
+                                </div>
+                            </div>
+
+                            <div class="main__container__right__chat__bottom__cont__dia derecha">
+                                <div class="main__container__right__chat__bottom__cont__dia_pretxt pretxt2">
+                                <div class="main__container__right__chat__bottom__cont__dia_txt color2">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus totam, unde impedit sequi sunt explicabo earum id molestiae, illum aut ipsam quo quibusdam inventore, repudiandae voluptatum. Quibusdam assumenda repudiandae iure?
+                                </div>
+                                </div>
+                                <figure>
+                                    <img src="assets/img/Haiyi.jpg" alt="persona">
+                                </figure>
+                            </div>
+
+                            <div class="main__container__right__chat__bottom__cont__dia">
+                                <figure>
+                                    <img src="assets/img/Layla.jpg" alt="persona">
+                                </figure>
+                                <div class="main__container__right__chat__bottom__cont__dia_pretxt">
+                                <div class="main__container__right__chat__bottom__cont__dia_txt color1">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus totam, unde impedit sequi sunt explicabo earum id molestiae, illum aut ipsam quo quibusdam inventore, repudiandae voluptatum. Quibusdam assumenda repudiandae iure?
+                                </div>
+                                </div>
+                            </div>
+
+                            <div class="main__container__right__chat__bottom__cont__dia derecha">
+                                <div class="main__container__right__chat__bottom__cont__dia_pretxt pretxt2">
+                                <div class="main__container__right__chat__bottom__cont__dia_txt color2">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus totam, unde impedit sequi sunt explicabo earum id molestiae, illum aut ipsam quo quibusdam inventore, repudiandae voluptatum. Quibusdam assumenda repudiandae iure?
+                                </div>
+                                </div>
+                                <figure>
+                                    <img src="assets/img/Haiyi.jpg" alt="persona">
+                                </figure>
+                            </div>
+
+                        </div>
+                        <div class="main__container__right__chat__bottom__input">
+                            <input type="text">
+                            <button>Search</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="main__container__right__chat chatCont2">
+                    <div class="main__container__right__chat__top">
+                        <figure>
+                            <img src="assets/img/YaeMiko.jpg" alt="persona">
+                        </figure>
+                        <div class="main__container__right__chat__top__nye">
+                            <div class="main__container__right__chat__top__nombre">Yae Miko</div>
+                            <div class="main__container__right__chat__top__estado">No estoy disponible, habla con mi asistente</div>
+                        </div>
+                        <div class="main__container__right__chat__top__x" onclick="retorno()">X</div>
+                    </div>
+                    <div class="main__container__right__chat__bottom">
+                        <div class="main__container__right__chat__bottom__cont">
+                            <div class="main__container__right__chat__bottom__cont__dia">
+                                <figure>
+                                    <img src="assets/img/YaeMiko.jpg" alt="persona">
+                                </figure>
+                                <div class="main__container__right__chat__bottom__cont__dia_pretxt">
+                                <div class="main__container__right__chat__bottom__cont__dia_txt color1">
+                                    uno
+                                </div>
+                                </div>
+                            </div>
+
+                            <div class="main__container__right__chat__bottom__cont__dia derecha">
+                                <div class="main__container__right__chat__bottom__cont__dia_pretxt pretxt2">
+                                <div class="main__container__right__chat__bottom__cont__dia_txt color2">
+                                    dos
+                                </div>
+                                </div>
+                                <figure>
+                                    <img src="assets/img/Haiyi.jpg" alt="persona">
+                                </figure>
+                            </div>
+
+                            <div class="main__container__right__chat__bottom__cont__dia">
+                                <figure>
+                                    <img src="assets/img/YaeMiko.jpg" alt="persona">
+                                </figure>
+                                <div class="main__container__right__chat__bottom__cont__dia_pretxt">
+                                <div class="main__container__right__chat__bottom__cont__dia_txt color1">
+                                    tres
+                                </div>
+                                </div>
+                            </div>
+
+                            <div class="main__container__right__chat__bottom__cont__dia derecha">
+                                <div class="main__container__right__chat__bottom__cont__dia_pretxt pretxt2">
+                                <div class="main__container__right__chat__bottom__cont__dia_txt color2">
+                                    cuatro
+                                </div>
+                                </div>
+                                <figure>
+                                    <img src="assets/img/Haiyi.jpg" alt="persona">
+                                </figure>
+                            </div>
+
+                        </div>
+                        <div class="main__container__right__chat__bottom__input">
+                            <input type="text">
+                            <button>Search</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="main__container__right__chat chatCont3">
+                    <div class="main__container__right__chat__top">
+                        <figure>
+                            <img src="assets/img/HuTao.jpg" alt="persona">
+                        </figure>
+                        <div class="main__container__right__chat__top__nye">
+                            <div class="main__container__right__chat__top__nombre">Nombre Apellido</div>
+                            <div class="main__container__right__chat__top__estado">Estado</div>
+                        </div>
+                        <div class="main__container__right__chat__top__x" onclick="retorno()">X</div>
+                    </div>
+                    <div class="main__container__right__chat__bottom">
+                        <div class="main__container__right__chat__bottom__cont">
+                            <div class="main__container__right__chat__bottom__cont__dia">
+                                <figure>
+                                    <img src="assets/img/HuTao.jpg" alt="persona">
+                                </figure>
+                                <div class="main__container__right__chat__bottom__cont__dia_pretxt">
+                                <div class="main__container__right__chat__bottom__cont__dia_txt color1">
+                                    uno
+                                </div>
+                                </div>
+                            </div>
+
+                            <div class="main__container__right__chat__bottom__cont__dia derecha">
+                                <div class="main__container__right__chat__bottom__cont__dia_pretxt pretxt2">
+                                <div class="main__container__right__chat__bottom__cont__dia_txt color2">
+                                    dos
+                                </div>
+                                </div>
+                                <figure>
+                                    <img src="assets/img/Haiyi.jpg" alt="persona">
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="main__container__right__chat__bottom__input">
+                            <input type="text">
+                            <button>Search</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                
+                <div class="main__container__right__chat chatCont4">
+                    <div class="main__container__right__chat__top">
+                        <figure>
+                            <img src="assets/img/HuTao.jpg" alt="persona">
+                        </figure>
+                        <div class="main__container__right__chat__top__nye">
+                            <div class="main__container__right__chat__top__nombre">Nombre Apellido</div>
+                            <div class="main__container__right__chat__top__estado">Estado</div>
+                        </div>
+                        <div class="main__container__right__chat__top__x" onclick="retorno()">X</div>
+                    </div>
+                    <div class="main__container__right__chat__bottom">
+                        <div class="main__container__right__chat__bottom__cont">
+                            <div class="main__container__right__chat__bottom__cont__dia">
+                                <figure>
+                                    <img src="assets/img/HuTao.jpg" alt="persona">
+                                </figure>
+                                <div class="main__container__right__chat__bottom__cont__dia_pretxt">
+                                <div class="main__container__right__chat__bottom__cont__dia_txt color1">
+                                    uno
+                                </div>
+                                </div>
+                            </div>
+
+                            <div class="main__container__right__chat__bottom__cont__dia derecha">
+                                <div class="main__container__right__chat__bottom__cont__dia_pretxt pretxt2">
+                                <div class="main__container__right__chat__bottom__cont__dia_txt color2">
+                                    dos
+                                </div>
+                                </div>
+                                <figure>
+                                    <img src="assets/img/Haiyi.jpg" alt="persona">
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="main__container__right__chat__bottom__input">
+                            <input type="text">
+                            <button>Search</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main__container__right__chat chatCont5">
+                    <div class="main__container__right__chat__top">
+                        <figure>
+                            <img src="assets/img/HuTao.jpg" alt="persona">
+                        </figure>
+                        <div class="main__container__right__chat__top__nye">
+                            <div class="main__container__right__chat__top__nombre">Nombre Apellido</div>
+                            <div class="main__container__right__chat__top__estado">Estado</div>
+                        </div>
+                        <div class="main__container__right__chat__top__x" onclick="retorno()">X</div>
+                    </div>
+                    <div class="main__container__right__chat__bottom">
+                        <div class="main__container__right__chat__bottom__cont">
+                            <div class="main__container__right__chat__bottom__cont__dia">
+                                <figure>
+                                    <img src="assets/img/HuTao.jpg" alt="persona">
+                                </figure>
+                                <div class="main__container__right__chat__bottom__cont__dia_pretxt">
+                                <div class="main__container__right__chat__bottom__cont__dia_txt color1">
+                                    uno
+                                </div>
+                                </div>
+                            </div>
+
+                            <div class="main__container__right__chat__bottom__cont__dia derecha">
+                                <div class="main__container__right__chat__bottom__cont__dia_pretxt pretxt2">
+                                <div class="main__container__right__chat__bottom__cont__dia_txt color2">
+                                    dos
+                                </div>
+                                </div>
+                                <figure>
+                                    <img src="assets/img/Haiyi.jpg" alt="persona">
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="main__container__right__chat__bottom__input">
+                            <input type="text">
+                            <button>Search</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main__container__right__chat chatCont6">
+                    <div class="main__container__right__chat__top">
+                        <figure>
+                            <img src="assets/img/HuTao.jpg" alt="persona">
+                        </figure>
+                        <div class="main__container__right__chat__top__nye">
+                            <div class="main__container__right__chat__top__nombre">Nombre Apellido</div>
+                            <div class="main__container__right__chat__top__estado">Estado</div>
+                        </div>
+                        <div class="main__container__right__chat__top__x" onclick="retorno()">X</div>
+                    </div>
+                    <div class="main__container__right__chat__bottom">
+                        <div class="main__container__right__chat__bottom__cont">
+                            <div class="main__container__right__chat__bottom__cont__dia">
+                                <figure>
+                                    <img src="assets/img/HuTao.jpg" alt="persona">
+                                </figure>
+                                <div class="main__container__right__chat__bottom__cont__dia_pretxt">
+                                <div class="main__container__right__chat__bottom__cont__dia_txt color1">
+                                    uno
+                                </div>
+                                </div>
+                            </div>
+
+                            <div class="main__container__right__chat__bottom__cont__dia derecha">
+                                <div class="main__container__right__chat__bottom__cont__dia_pretxt pretxt2">
+                                <div class="main__container__right__chat__bottom__cont__dia_txt color2">
+                                    dos
+                                </div>
+                                </div>
+                                <figure>
+                                    <img src="assets/img/Haiyi.jpg" alt="persona">
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="main__container__right__chat__bottom__input">
+                            <input type="text">
+                            <button>Search</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </main>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

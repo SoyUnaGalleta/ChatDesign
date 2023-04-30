@@ -1,0 +1,25 @@
+/* abstracts */
+@import 'abstracts/variables';
+
+/* vendors */
+
+/* base */
+@import 'base/typography';
+
+/* layout */
+@import 'layout/body';
+@import 'layout/contejntRight';
+@import 'layout/contentLeft';
+@import 'layout/contentMain';
+@import 'layout/navigation';
+@import 'layout/scrollbar';
+
+/* components */
+@import 'components/contenedorChat';
+@import 'components/iconosConectados';
+@import 'components/inputsCosas';
+
+/* pages */
+
+/* themes */
+@import 'themes/mediaQueries';
