@@ -4,8 +4,18 @@
 
 .main__container__left__busqueda input{
     display: inline-block;
+    background: $light;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 5px;
+    width: 100%;
 }
 
 .main__container__right__chat__bottom__input input{
     display: inline-block;
+    background: $light;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 5px;
+    width: 100%;
 }

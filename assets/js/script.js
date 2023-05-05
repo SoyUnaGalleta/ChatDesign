@@ -12,21 +12,32 @@ function  check(a) {
             personas[i].style.color = "#88ac95";
         }
     }
-
-    let w = window.innerWidth;
-    if (w <= 540) {
-        let right = document.getElementsByClassName('main__container__right')
-        right[0].style.display = 'flex';
-        let left = document.getElementsByClassName('main__container__left')
-        left[0].style.display = 'none';
-    }
 }
 
+function enlaces() {
+    let enlacesBarra = document.getElementsByClassName('navegation_enlaces')[0]
+    enlacesBarra.style.height = '170px';
+    enlacesBarra.style.padding = '5px';
+    enlacesBarra.style.boxShadow = '2px 2px 2px $darkTwo';
 
-function  retorno() {
-    let right = document.getElementsByClassName('main__container__right')
-        right[0].style.display = 'none';
-        let left = document.getElementsByClassName('main__container__left')
-        left[0].style.display = 'flex';
+    let boton1 = document.getElementById('navigation__button')
+    let boton2 = document.getElementById('navigation__button2')
 
+    boton1.style.display = 'none';
+    boton2.style.display = 'block'
+
+}
+
+function ocultarEnlaces() {
+
+    let enlacesBarra = document.getElementsByClassName('navegation_enlaces')[0]
+    enlacesBarra.style.height = '0px';
+    enlacesBarra.style.padding = '0px 20px';
+    enlacesBarra.style.boxShadow = '0px 0px 0px $darkTwo';
+
+    let boton1 = document.getElementById('navigation__button')
+    let boton2 = document.getElementById('navigation__button2')
+
+    boton1.style.display = 'block';
+    boton2.style.display = 'none'
 }

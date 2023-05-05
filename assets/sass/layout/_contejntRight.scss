@@ -51,7 +51,7 @@
 }
 
 .main__container__right__chat__top__nye{
-    margin-left: 30px;
+    margin-left: 5%;
 }
 
 .main__container__right__chat__top__nombre {
@@ -87,6 +87,8 @@
 }
 
 .main__container__right__chat__bottom__input {
+    display: flex;
+    justify-content: center;
     background: $color4;
     border-radius: 10px;
     padding: 8px;
@@ -147,6 +149,11 @@
     background: $color5;
 }
 
-.main__container__right__chat__top__x{
-    display: none;
+.main__container__right__chat__bottom__cont__dia__txt__visto {
+    position: relative;
+    top:10px;
+    float: right;
+    color: $darkTwo;
+    font-family: 'Roboto';
+    font-size: 12px;
 }

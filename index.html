@@ -11,16 +11,17 @@
     <header class="header">
         <div class="header__anuncio"><p class="header__anuncio__texto">Aquí podría haber un <b>anuncio</b></p></div>
         <nav class="navegation">
-            <div class="navegation__icon">Navbar</div>
+            <input type="button" value="Enlaces" id="navigation__button" onclick="enlaces()">
+            <input type="button" value="Ocultar Enlaces" id="navigation__button2" onclick="ocultarEnlaces()">
             <ul class="navegation_enlaces">
                 <li class="navegation__item"><a>Home</a></li>
                 <li class="navegation__item"><a>Preguntas Frecuentes</a></li>
-                <li class="navegation__item"><a>Manuales</a></li>
+                <li class="navegation__item"><a>Manuales y Tutoriales</a></li>
                 <li class="navegation__item"><a>Noticias</a></li>
                 <li class="navegation__item"><a>Calendario</a></li>
-                <li class="navegation__item"><a>Administración Perfil</a></li>
-                <li class="navegation__item"><a>Organigrama Empresa</a></li>
-                <li class="navegation__item"><a>Chat Vendedores y Soportes</a></li>
+                <li class="navegation__item"><a>Administración de Perfil</a></li>
+                <li class="navegation__item"><a>Organigrama de la Empresa</a></li>
+                <li class="navegation__item"><a>Chat Vendedores y Soporte</a></li>
             </ul>
         </nav>
     </header>
@@ -42,7 +43,7 @@
             <div class="main__container__left">
                 <div class="main__container__left__busqueda">
                     <input type="text">
-                    <button>Search</button>
+                    <button class="main__container__botones">Search</button>
                 </div>
                 <div class="main__container__left__list">
 
@@ -137,9 +138,8 @@
                         </figure>
                         <div class="main__container__right__chat__top__nye">
                             <div class="main__container__right__chat__top__nombre">Hu Tao</div>
-                            <div class="main__container__right__chat__top__estado">¡Siempre lista para atender a mis clientes!</div>
+                            <div class="main__container__right__chat__top__estado">Estado</div>
                         </div>
-                        <div class="main__container__right__chat__top__x" onclick="retorno()">X</div>
                     </div>
                     <div class="main__container__right__chat__bottom">
                         <div class="main__container__right__chat__bottom__cont">
@@ -151,19 +151,39 @@
                                 </figure>
                                 <div class="main__container__right__chat__bottom__cont__dia_pretxt">
                                 <div class="main__container__right__chat__bottom__cont__dia_txt color1">
-                                    ¡Hola querido cliente!
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus totam, unde impedit sequi sunt explicabo earum id molestiae, illum aut ipsam quo quibusdam inventore, repudiandae voluptatum. Quibusdam assumenda repudiandae iure?
+                                    <div class="main__container__right__chat__bottom__cont__dia__txt__visto">12:26 ✓✓</div>
                                 </div>
                                 <div class="main__container__right__chat__bottom__cont__dia_txt color1">
-                                    Mi nombre es Hu Tao, dueña de la funeraria El Camino, y vengo a ofrecerle las mejores precios para su camino hacía el más allá
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus totam, unde impedit sequi sunt explicabo earum id molestiae, illum aut ipsam quo quibusdam inventore, repudiandae voluptatum. Quibusdam assumenda repudiandae iure?
+                                    <div class="main__container__right__chat__bottom__cont__dia__txt__visto">12:29 ✓✓</div>
                                 </div>
-                                <div class="main__container__right__chat__bottom__cont__dia_txt color1">
-                                    ¿Cuántos ataudes necesita?
                                 </div>
-                                <div class="main__container__right__chat__bottom__cont__dia_txt color1">
-                                    Tenemos las mejores ofertas: 3 por el precio de 2, 5 por el precios de tres
+                                
+                            </div>
+
+
+                            <div class="main__container__right__chat__bottom__cont__dia  derecha">
+                                <div class="main__container__right__chat__bottom__cont__dia_pretxt pretxt2">
+                                    <div class="main__container__right__chat__bottom__cont__dia_txt color2">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus totam, unde impedit sequi sunt explicabo earum id molestiae, illum aut ipsam quo quibusdam inventore, repudiandae voluptatum. Quibusdam assumenda repudiandae iure?
+                                        <div class="main__container__right__chat__bottom__cont__dia__txt__visto">12:31 ✓✓</div>
+                                    </div>
                                 </div>
+                                <figure>
+                                    <img src="assets/img/Haiyi.jpg" alt="persona">
+                                </figure>
+                            </div>
+
+
+                            <div class="main__container__right__chat__bottom__cont__dia">
+                                <figure>
+                                    <img src="assets/img/HuTao.jpg" alt="persona">
+                                </figure>
+                                <div class="main__container__right__chat__bottom__cont__dia_pretxt">
                                 <div class="main__container__right__chat__bottom__cont__dia_txt color1">
-                                    ¡Nunca esta de más ser precavido!
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus totam, unde impedit sequi sunt explicabo earum id molestiae, illum aut ipsam quo quibusdam inventore, repudiandae voluptatum. Quibusdam assumenda repudiandae iure?
+                                    <div class="main__container__right__chat__bottom__cont__dia__txt__visto">12:34 ✓✓</div>
                                 </div>
                                 </div>
                             </div>
@@ -172,7 +192,8 @@
                             <div class="main__container__right__chat__bottom__cont__dia  derecha">
                                 <div class="main__container__right__chat__bottom__cont__dia_pretxt pretxt2">
                                     <div class="main__container__right__chat__bottom__cont__dia_txt color2">
-                                        Hola...
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus totam, unde impedit sequi sunt explicabo earum id molestiae, illum aut ipsam quo quibusdam inventore, repudiandae voluptatum. Quibusdam assumenda repudiandae iure?
+                                        <div class="main__container__right__chat__bottom__cont__dia__txt__visto">12:36 ✓</div>
                                     </div>
                                 </div>
                                 <figure>
@@ -185,7 +206,7 @@
                         </div>
                         <div class="main__container__right__chat__bottom__input">
                             <input type="text">
-                            <button>Search</button>
+                            <button class="main__container__botones">Enviar</button>
                         </div>
                     </div>
                 </div>
@@ -200,9 +221,8 @@
                         </figure>
                         <div class="main__container__right__chat__top__nye">
                             <div class="main__container__right__chat__top__nombre">Layla</div>
-                            <div class="main__container__right__chat__top__estado">¡Prometo no dormirme en el trabajo!</div>
+                            <div class="main__container__right__chat__top__estado">Estado</div>
                         </div>
-                        <div class="main__container__right__chat__top__x" onclick="retorno()">X</div>
                     </div>
                     <div class="main__container__right__chat__bottom">
                         <div class="main__container__right__chat__bottom__cont">
@@ -213,9 +233,11 @@
                                 <div class="main__container__right__chat__bottom__cont__dia_pretxt">
                                 <div class="main__container__right__chat__bottom__cont__dia_txt color1">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus totam, unde impedit sequi sunt explicabo earum id molestiae, illum aut ipsam quo quibusdam inventore, repudiandae voluptatum. Quibusdam assumenda repudiandae iure?
+                                    <div class="main__container__right__chat__bottom__cont__dia__txt__visto">9:13 ✓✓</div>
                                 </div>
                                 <div class="main__container__right__chat__bottom__cont__dia_txt color1">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus totam, unde impedit sequi sunt explicabo earum id molestiae, illum aut ipsam quo quibusdam inventore, repudiandae voluptatum. Quibusdam assumenda repudiandae iure?
+                                    <div class="main__container__right__chat__bottom__cont__dia__txt__visto">9:16 ✓✓</div>
                                 </div>
                                 </div>
                             </div>
@@ -224,6 +246,7 @@
                                 <div class="main__container__right__chat__bottom__cont__dia_pretxt pretxt2">
                                 <div class="main__container__right__chat__bottom__cont__dia_txt color2">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus totam, unde impedit sequi sunt explicabo earum id molestiae, illum aut ipsam quo quibusdam inventore, repudiandae voluptatum. Quibusdam assumenda repudiandae iure?
+                                    <div class="main__container__right__chat__bottom__cont__dia__txt__visto">9:56 ✓✓</div>
                                 </div>
                                 </div>
                                 <figure>
@@ -238,6 +261,7 @@
                                 <div class="main__container__right__chat__bottom__cont__dia_pretxt">
                                 <div class="main__container__right__chat__bottom__cont__dia_txt color1">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus totam, unde impedit sequi sunt explicabo earum id molestiae, illum aut ipsam quo quibusdam inventore, repudiandae voluptatum. Quibusdam assumenda repudiandae iure?
+                                    <div class="main__container__right__chat__bottom__cont__dia__txt__visto">10:11 ✓✓</div>
                                 </div>
                                 </div>
                             </div>
@@ -246,6 +270,7 @@
                                 <div class="main__container__right__chat__bottom__cont__dia_pretxt pretxt2">
                                 <div class="main__container__right__chat__bottom__cont__dia_txt color2">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus totam, unde impedit sequi sunt explicabo earum id molestiae, illum aut ipsam quo quibusdam inventore, repudiandae voluptatum. Quibusdam assumenda repudiandae iure?
+                                    <div class="main__container__right__chat__bottom__cont__dia__txt__visto">10:45 ✓✓</div>
                                 </div>
                                 </div>
                                 <figure>
@@ -256,7 +281,7 @@
                         </div>
                         <div class="main__container__right__chat__bottom__input">
                             <input type="text">
-                            <button>Search</button>
+                            <button class="main__container__botones">Enviar</button>
                         </div>
                     </div>
                 </div>
@@ -271,9 +296,8 @@
                         </figure>
                         <div class="main__container__right__chat__top__nye">
                             <div class="main__container__right__chat__top__nombre">Yae Miko</div>
-                            <div class="main__container__right__chat__top__estado">No estoy disponible, habla con mi asistente</div>
+                            <div class="main__container__right__chat__top__estado">Estado</div>
                         </div>
-                        <div class="main__container__right__chat__top__x" onclick="retorno()">X</div>
                     </div>
                     <div class="main__container__right__chat__bottom">
                         <div class="main__container__right__chat__bottom__cont">
@@ -284,6 +308,7 @@
                                 <div class="main__container__right__chat__bottom__cont__dia_pretxt">
                                 <div class="main__container__right__chat__bottom__cont__dia_txt color1">
                                     uno
+                                    <div class="main__container__right__chat__bottom__cont__dia__txt__visto">04/05 18:32 ✓✓</div>
                                 </div>
                                 </div>
                             </div>
@@ -292,6 +317,7 @@
                                 <div class="main__container__right__chat__bottom__cont__dia_pretxt pretxt2">
                                 <div class="main__container__right__chat__bottom__cont__dia_txt color2">
                                     dos
+                                    <div class="main__container__right__chat__bottom__cont__dia__txt__visto">04/05 18:38 ✓✓</div>
                                 </div>
                                 </div>
                                 <figure>
@@ -306,6 +332,7 @@
                                 <div class="main__container__right__chat__bottom__cont__dia_pretxt">
                                 <div class="main__container__right__chat__bottom__cont__dia_txt color1">
                                     tres
+                                    <div class="main__container__right__chat__bottom__cont__dia__txt__visto">04/05 18:42 ✓✓</div>
                                 </div>
                                 </div>
                             </div>
@@ -314,6 +341,7 @@
                                 <div class="main__container__right__chat__bottom__cont__dia_pretxt pretxt2">
                                 <div class="main__container__right__chat__bottom__cont__dia_txt color2">
                                     cuatro
+                                    <div class="main__container__right__chat__bottom__cont__dia__txt__visto">04/05 18:48 ✓✓</div>
                                 </div>
                                 </div>
                                 <figure>
@@ -324,7 +352,7 @@
                         </div>
                         <div class="main__container__right__chat__bottom__input">
                             <input type="text">
-                            <button>Search</button>
+                            <button class="main__container__botones">Enviar</button>
                         </div>
                     </div>
                 </div>
@@ -341,7 +369,6 @@
                             <div class="main__container__right__chat__top__nombre">Nombre Apellido</div>
                             <div class="main__container__right__chat__top__estado">Estado</div>
                         </div>
-                        <div class="main__container__right__chat__top__x" onclick="retorno()">X</div>
                     </div>
                     <div class="main__container__right__chat__bottom">
                         <div class="main__container__right__chat__bottom__cont">
@@ -352,6 +379,7 @@
                                 <div class="main__container__right__chat__bottom__cont__dia_pretxt">
                                 <div class="main__container__right__chat__bottom__cont__dia_txt color1">
                                     uno
+                                    <div class="main__container__right__chat__bottom__cont__dia__txt__visto">03/05 16:32 ✓✓</div>
                                 </div>
                                 </div>
                             </div>
@@ -360,6 +388,7 @@
                                 <div class="main__container__right__chat__bottom__cont__dia_pretxt pretxt2">
                                 <div class="main__container__right__chat__bottom__cont__dia_txt color2">
                                     dos
+                                    <div class="main__container__right__chat__bottom__cont__dia__txt__visto">03/05 16:36 ✓✓</div>
                                 </div>
                                 </div>
                                 <figure>
@@ -369,7 +398,7 @@
                         </div>
                         <div class="main__container__right__chat__bottom__input">
                             <input type="text">
-                            <button>Search</button>
+                            <button class="main__container__botones">Enviar</button>
                         </div>
                     </div>
                 </div>
@@ -386,7 +415,6 @@
                             <div class="main__container__right__chat__top__nombre">Nombre Apellido</div>
                             <div class="main__container__right__chat__top__estado">Estado</div>
                         </div>
-                        <div class="main__container__right__chat__top__x" onclick="retorno()">X</div>
                     </div>
                     <div class="main__container__right__chat__bottom">
                         <div class="main__container__right__chat__bottom__cont">
@@ -397,6 +425,7 @@
                                 <div class="main__container__right__chat__bottom__cont__dia_pretxt">
                                 <div class="main__container__right__chat__bottom__cont__dia_txt color1">
                                     uno
+                                    <div class="main__container__right__chat__bottom__cont__dia__txt__visto">03/05 13:14 ✓✓</div>
                                 </div>
                                 </div>
                             </div>
@@ -405,6 +434,7 @@
                                 <div class="main__container__right__chat__bottom__cont__dia_pretxt pretxt2">
                                 <div class="main__container__right__chat__bottom__cont__dia_txt color2">
                                     dos
+                                    <div class="main__container__right__chat__bottom__cont__dia__txt__visto">03/05 13:17 ✓✓</div>
                                 </div>
                                 </div>
                                 <figure>
@@ -414,10 +444,11 @@
                         </div>
                         <div class="main__container__right__chat__bottom__input">
                             <input type="text">
-                            <button>Search</button>
+                            <button class="main__container__botones">Enviar</button>
                         </div>
                     </div>
                 </div>
+
 
                 <div class="main__container__right__chat chatCont5">
                     <div class="main__container__right__chat__top">
@@ -428,7 +459,6 @@
                             <div class="main__container__right__chat__top__nombre">Nombre Apellido</div>
                             <div class="main__container__right__chat__top__estado">Estado</div>
                         </div>
-                        <div class="main__container__right__chat__top__x" onclick="retorno()">X</div>
                     </div>
                     <div class="main__container__right__chat__bottom">
                         <div class="main__container__right__chat__bottom__cont">
@@ -439,6 +469,7 @@
                                 <div class="main__container__right__chat__bottom__cont__dia_pretxt">
                                 <div class="main__container__right__chat__bottom__cont__dia_txt color1">
                                     uno
+                                    <div class="main__container__right__chat__bottom__cont__dia__txt__visto">03/05 12:06 ✓✓</div>
                                 </div>
                                 </div>
                             </div>
@@ -447,6 +478,7 @@
                                 <div class="main__container__right__chat__bottom__cont__dia_pretxt pretxt2">
                                 <div class="main__container__right__chat__bottom__cont__dia_txt color2">
                                     dos
+                                    <div class="main__container__right__chat__bottom__cont__dia__txt__visto">03/05 12:08 ✓✓</div>
                                 </div>
                                 </div>
                                 <figure>
@@ -456,10 +488,11 @@
                         </div>
                         <div class="main__container__right__chat__bottom__input">
                             <input type="text">
-                            <button>Search</button>
+                            <button  class="main__container__botones">Enviar</button>
                         </div>
                     </div>
                 </div>
+
 
                 <div class="main__container__right__chat chatCont6">
                     <div class="main__container__right__chat__top">
@@ -470,7 +503,6 @@
                             <div class="main__container__right__chat__top__nombre">Nombre Apellido</div>
                             <div class="main__container__right__chat__top__estado">Estado</div>
                         </div>
-                        <div class="main__container__right__chat__top__x" onclick="retorno()">X</div>
                     </div>
                     <div class="main__container__right__chat__bottom">
                         <div class="main__container__right__chat__bottom__cont">
@@ -481,6 +513,7 @@
                                 <div class="main__container__right__chat__bottom__cont__dia_pretxt">
                                 <div class="main__container__right__chat__bottom__cont__dia_txt color1">
                                     uno
+                                    <div class="main__container__right__chat__bottom__cont__dia__txt__visto">03/05 10:12 ✓✓</div>
                                 </div>
                                 </div>
                             </div>
@@ -489,6 +522,7 @@
                                 <div class="main__container__right__chat__bottom__cont__dia_pretxt pretxt2">
                                 <div class="main__container__right__chat__bottom__cont__dia_txt color2">
                                     dos
+                                    <div class="main__container__right__chat__bottom__cont__dia__txt__visto">03/05 10:21 ✓✓</div>
                                 </div>
                                 </div>
                                 <figure>
@@ -498,16 +532,17 @@
                         </div>
                         <div class="main__container__right__chat__bottom__input">
                             <input type="text">
-                            <button>Search</button>
+                            <button class="main__container__botones">Enviar</button>
                         </div>
                     </div>
                 </div>
-
-
-
             </div>
         </div>
     </main>
+
+    <footer class="flooter">
+        <div class="flooter__texto">Aquí van los <b>creditos</b></div>
+    </footer>
     <script src="assets/js/script.js"></script>
 </body>
 </html>

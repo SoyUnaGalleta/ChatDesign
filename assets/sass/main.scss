@@ -12,9 +12,11 @@
 @import 'layout/contentLeft';
 @import 'layout/contentMain';
 @import 'layout/navigation';
+@import 'layout/flooter';
 @import 'layout/scrollbar';
 
 /* components */
+@import 'components/buttons';
 @import 'components/contenedorChat';
 @import 'components/iconosConectados';
 @import 'components/inputsCosas';

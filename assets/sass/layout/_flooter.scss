@@ -1,0 +1,23 @@
+.flooter {
+    background: $color1;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1%;
+    margin-top: 2%;
+}
+
+.flooter__texto{
+    margin: 0px;
+    color: $light;
+    font-family: 'Montserrat';
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.flooter__texto b{
+    color: $color4;
+    text-shadow: 1px 1px 1px $darkTwo;
+}
